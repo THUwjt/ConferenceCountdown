@@ -3,12 +3,14 @@ import { Conference } from "./types";
 // Static conference data — no database needed for static export / GitHub Pages deployment
 // Conferences that have fully passed are replaced with next year's edition.
 
-let nextId = 1;
-function id() {
-    return nextId++;
-}
+// Cache the conference array so IDs are stable across calls
+let _cachedConferences: Conference[] | null = null;
 
-export function getConferences(): Conference[] {
+function buildConferences(): Conference[] {
+    let nextId = 1;
+    function id() {
+        return nextId++;
+    }
     return [
         // ===== AI/ML Conferences =====
         // ICLR 2026 — Official: iclr.cc
@@ -51,7 +53,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://iclr.cc/Conferences/2026",
             cfp_url: "https://iclr.cc/Conferences/2026/CallForPapers",
-            proceedings_url: null,
+            proceedings_url: "https://openreview.net/group?id=ICLR.cc/2025/Conference",
             paper_template_url: "https://github.com/ICLR/Master-Template",
             latex_template_url: null,
             themes: ["Representation Learning", "Deep Learning", "Generative Models", "Reinforcement Learning"],
@@ -108,7 +110,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://neurips.cc/Conferences/2026",
             cfp_url: "https://neurips.cc/Conferences/2026/CallForPapers",
-            proceedings_url: null,
+            proceedings_url: "https://proceedings.neurips.cc/paper_files/paper/2025",
             paper_template_url: "https://neurips.cc/Conferences/2026/PaperInformation/StyleFiles",
             latex_template_url: null,
             themes: ["Machine Learning", "Neuroscience", "Optimization", "Theory"],
@@ -165,7 +167,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://icml.cc/Conferences/2026",
             cfp_url: "https://icml.cc/Conferences/2026/CallForPapers",
-            proceedings_url: null,
+            proceedings_url: "https://proceedings.mlr.press/v267",
             paper_template_url: "https://icml.cc/Conferences/2026/StyleFiles",
             latex_template_url: null,
             themes: ["Machine Learning", "Deep Learning", "Optimization", "Theory"],
@@ -224,7 +226,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://aaai.org/conference/aaai/",
             cfp_url: null,
-            proceedings_url: null,
+            proceedings_url: "https://ojs.aaai.org/index.php/AAAI/issue/view/683",
             paper_template_url: "https://aaai.org/authorkit/",
             latex_template_url: null,
             themes: ["Artificial Intelligence", "NLP", "Computer Vision", "Robotics", "Knowledge Representation"],
@@ -283,7 +285,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://mlsys.org/",
             cfp_url: "https://mlsys.org/Conferences/2026/CallForPapers",
-            proceedings_url: null,
+            proceedings_url: "https://proceedings.mlsys.org/papers/2025",
             paper_template_url: "https://mlsys.org/Conferences/2026/StyleFiles",
             latex_template_url: null,
             themes: ["ML Systems", "Compiler Optimization", "Distributed Training", "Inference"],
@@ -340,7 +342,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://www.usenix.org/conference/osdi26",
             cfp_url: "https://www.usenix.org/conference/osdi26/call-for-papers",
-            proceedings_url: null,
+            proceedings_url: "https://www.usenix.org/conference/osdi24/technical-sessions",
             paper_template_url: "https://www.usenix.org/conferences/author-resources/paper-templates",
             latex_template_url: null,
             themes: ["Operating Systems", "Distributed Systems", "Storage", "Networking", "ML Systems"],
@@ -397,7 +399,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://sigops.org/s/conferences/sosp/2026/",
             cfp_url: "https://sigops.org/s/conferences/sosp/2026/cfp.html",
-            proceedings_url: null,
+            proceedings_url: "https://dl.acm.org/doi/proceedings/10.1145/3694715",
             paper_template_url: "https://www.acm.org/publications/proceedings-template",
             latex_template_url: null,
             themes: ["Operating Systems", "Distributed Systems", "Verification", "Security"],
@@ -454,7 +456,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://pact2026.github.io/",
             cfp_url: "https://pact2026.github.io/cfp/",
-            proceedings_url: null,
+            proceedings_url: "https://ieeexplore.ieee.org/xpl/conhome/1000093/all-proceedings",
             paper_template_url: "https://www.acm.org/publications/proceedings-template",
             latex_template_url: null,
             themes: ["Parallel Computing", "Compiler Optimization", "Architecture", "Runtime Systems"],
@@ -514,7 +516,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://hpca-conf.org/",
             cfp_url: null,
-            proceedings_url: null,
+            proceedings_url: "https://ieeexplore.ieee.org/xpl/conhome/1000014/all-proceedings",
             paper_template_url: "https://www.ieee.org/conferences/publishing/templates.html",
             latex_template_url: null,
             themes: ["Computer Architecture", "Microarchitecture", "Memory Systems", "Accelerators"],
@@ -571,7 +573,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://iscaconf.org/isca2026/",
             cfp_url: "https://iscaconf.org/isca2026/cfp/",
-            proceedings_url: null,
+            proceedings_url: "https://ieeexplore.ieee.org/xpl/conhome/1000122/all-proceedings",
             paper_template_url: "https://www.ieee.org/conferences/publishing/templates.html",
             latex_template_url: null,
             themes: ["Computer Architecture", "Accelerators", "Memory", "Interconnect"],
@@ -628,7 +630,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://microarch.org/micro59/",
             cfp_url: "https://microarch.org/micro59/cfp/",
-            proceedings_url: null,
+            proceedings_url: "https://ieeexplore.ieee.org/xpl/conhome/1000088/all-proceedings",
             paper_template_url: "https://www.ieee.org/conferences/publishing/templates.html",
             latex_template_url: null,
             themes: ["Microarchitecture", "Processors", "Accelerators", "Security"],
@@ -687,7 +689,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://iccad.com/",
             cfp_url: "https://iccad.com/call_for_papers",
-            proceedings_url: null,
+            proceedings_url: "https://ieeexplore.ieee.org/xpl/conhome/1000155/all-proceedings",
             paper_template_url: "https://www.ieee.org/conferences/publishing/templates.html",
             latex_template_url: null,
             themes: ["EDA", "Logic Synthesis", "Physical Design", "Verification", "ML for EDA"],
@@ -744,7 +746,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://www.date-conference.com/",
             cfp_url: "https://www.date-conference.com/call-for-papers",
-            proceedings_url: null,
+            proceedings_url: "https://ieeexplore.ieee.org/xpl/conhome/1000192/all-proceedings",
             paper_template_url: "https://www.ieee.org/conferences/publishing/templates.html",
             latex_template_url: null,
             themes: ["EDA", "Embedded Systems", "Cyber-Physical Systems", "IoT"],
@@ -803,7 +805,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://www.aspdac.com/aspdac2027/",
             cfp_url: "https://www.aspdac.com/aspdac2027/cfp/",
-            proceedings_url: null,
+            proceedings_url: "https://ieeexplore.ieee.org/xpl/conhome/1000197/all-proceedings",
             paper_template_url: "https://www.ieee.org/conferences/publishing/templates.html",
             latex_template_url: null,
             themes: ["VLSI Design", "EDA", "Embedded Systems", "Low Power", "AI for EDA"],
@@ -860,7 +862,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://dac.com/2026",
             cfp_url: "https://dac.com/2026/authors/call-for-contributions",
-            proceedings_url: null,
+            proceedings_url: "https://dl.acm.org/doi/proceedings/10.1145/3649329",
             paper_template_url: "https://www.ieee.org/conferences/publishing/templates.html",
             latex_template_url: null,
             themes: ["Design Automation", "EDA", "AI", "Security", "Low Power", "Chiplets"],
@@ -920,7 +922,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://www.isscc.org/",
             cfp_url: "https://www.isscc.org/call-for-papers",
-            proceedings_url: null,
+            proceedings_url: "https://ieeexplore.ieee.org/xpl/conhome/1000132/all-proceedings",
             paper_template_url: "https://www.ieee.org/conferences/publishing/templates.html",
             latex_template_url: null,
             themes: ["Analog", "Digital", "RF", "Power Management", "Data Converters", "Memory"],
@@ -977,7 +979,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://www.vlsisymposium.org/",
             cfp_url: "https://www.vlsisymposium.org/call-for-papers/",
-            proceedings_url: null,
+            proceedings_url: "https://ieeexplore.ieee.org/xpl/conhome/1000271/all-proceedings",
             paper_template_url: "https://www.ieee.org/conferences/publishing/templates.html",
             latex_template_url: null,
             themes: ["VLSI Technology", "Circuit Design", "Devices", "Process", "AI"],
@@ -1033,7 +1035,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://www.ieee-iedm.org/",
             cfp_url: "https://www.ieee-iedm.org/call-for-papers",
-            proceedings_url: null,
+            proceedings_url: "https://ieeexplore.ieee.org/xpl/conhome/1000205/all-proceedings",
             paper_template_url: "https://www.ieee.org/conferences/publishing/templates.html",
             latex_template_url: null,
             themes: ["Electron Devices", "Transistors", "Memory", "Emerging Devices"],
@@ -1090,7 +1092,7 @@ export function getConferences(): Conference[] {
             total_accepted: null,
             website: "https://www.hotchips.org/",
             cfp_url: "https://www.hotchips.org/call-for-contributions/",
-            proceedings_url: null,
+            proceedings_url: "https://hotchips.org/archives/",
             paper_template_url: null,
             latex_template_url: null,
             themes: ["Processors", "AI Accelerators", "Networking", "Memory", "Chiplets"],
@@ -1108,6 +1110,14 @@ export function getConferences(): Conference[] {
             last_fetched_at: null,
         },
     ];
+}
+
+// Cached accessor — ensures IDs are stable across multiple calls
+export function getConferences(): Conference[] {
+    if (!_cachedConferences) {
+        _cachedConferences = buildConferences();
+    }
+    return _cachedConferences;
 }
 
 // Get a conference by its ID

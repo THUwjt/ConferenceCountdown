@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: ["main"]
+  # Rebuild weekly (Mon 8am UTC) to keep GitHub Pages cache fresh
+  schedule:
+    - cron: "0 8 * * 1"
   # Allow manual trigger
   workflow_dispatch:
 
