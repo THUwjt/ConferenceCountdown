@@ -46,7 +46,7 @@ export function CountdownTimer({ targetDate, label, compact = false }: Countdown
             <div className="text-xs">
                 <span className="text-gray-500">{label}: </span>
                 <span className={cn("font-mono font-semibold", urgentClass)}>
-                    {days}d {hours}h {minutes}m
+                    {days}d {hours}h {minutes}m {seconds}s
                 </span>
             </div>
         );
