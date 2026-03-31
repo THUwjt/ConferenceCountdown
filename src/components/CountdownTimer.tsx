@@ -7,10 +7,11 @@ interface CountdownTimerProps {
     targetDate: string | null;
     label: string;
     compact?: boolean;
+    timezone?: string | null;
 }
 
-export function CountdownTimer({ targetDate, label, compact = false }: CountdownTimerProps) {
-    const countdown = useCountdown(targetDate);
+export function CountdownTimer({ targetDate, label, compact = false, timezone }: CountdownTimerProps) {
+    const countdown = useCountdown(targetDate, timezone);
 
     if (!countdown || !targetDate) {
         return (

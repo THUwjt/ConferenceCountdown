@@ -185,9 +185,10 @@ export default function ConferenceDetail({
                             <Clock className="w-4 h-4 text-red-500" />
                             Submission Deadline
                         </div>
-                        <CountdownTimer targetDate={c.submission_deadline} label="Submission" />
+                        <CountdownTimer targetDate={c.submission_deadline} label="Submission" timezone="Etc/GMT+12" />
                         <div className={cn("text-sm mt-3 font-medium", getDeadlineUrgencyColor(c.submission_deadline))}>
                             {formatDate(c.submission_deadline)}
+                            <span className="text-xs text-gray-400 ml-1">(AoE)</span>
                         </div>
                     </div>
                     <div className="bg-white rounded-xl border border-gray-200 shadow-lg p-6">
@@ -195,7 +196,7 @@ export default function ConferenceDetail({
                             <Calendar className="w-4 h-4 text-blue-500" />
                             Conference Starts
                         </div>
-                        <CountdownTimer targetDate={c.conference_start_date} label="Conference" />
+                        <CountdownTimer targetDate={c.conference_start_date} label="Conference" timezone={c.timezone} />
                         <div className="text-sm mt-3 font-medium text-gray-600">
                             {formatDate(c.conference_start_date)}
                         </div>

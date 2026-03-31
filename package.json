@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "update": "node scripts/update-conferences.mjs",
+    "update:build": "node scripts/update-conferences.mjs && next build"
   },
   "dependencies": {
     "clsx": "^2.1.1",

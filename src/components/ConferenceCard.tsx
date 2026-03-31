@@ -110,8 +110,8 @@ export function ConferenceCard({ conference, onToggleFavorite }: ConferenceCardP
 
                 {/* Countdown Timers */}
                 <div className="grid grid-cols-2 gap-3 mb-4 p-3 bg-gray-50 rounded-lg">
-                    <CountdownTimer targetDate={c.submission_deadline} label="Submission" compact />
-                    <CountdownTimer targetDate={c.conference_start_date} label="Conference" compact />
+                    <CountdownTimer targetDate={c.submission_deadline} label="Submission" compact timezone="Etc/GMT+12" />
+                    <CountdownTimer targetDate={c.conference_start_date} label="Conference" compact timezone={c.timezone} />
                 </div>
 
                 {/* Key Dates */}

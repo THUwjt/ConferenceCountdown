@@ -4,7 +4,15 @@ export function cn(...inputs: ClassValue[]) {
     return clsx(inputs);
 }
 
-export function getCountdown(targetDate: string | null): {
+/**
+ * Get countdown to a target date.
+ * @param targetDate - Date string in YYYY-MM-DD format
+ * @param timezone - IANA timezone string (e.g., "America/Los_Angeles").
+ *                   For submission deadlines, pass "Etc/GMT+12" (AoE - Anywhere on Earth)
+ *                   since most academic deadlines use AoE.
+ *                   If null/undefined, defaults to AoE for safety.
+ */
+export function getCountdown(targetDate: string | null, timezone?: string | null): {
     days: number;
     hours: number;
     minutes: number;
@@ -15,8 +23,58 @@ export function getCountdown(targetDate: string | null): {
 } | null {
     if (!targetDate) return null;
 
+    // Construct the end-of-day in the specified timezone
+    // For AoE (Anywhere on Earth) = UTC-12, IANA name is "Etc/GMT+12"
+    // Note: In IANA, Etc/GMT+12 means UTC-12 (signs are inverted)
+    const tz = timezone || "Etc/GMT+12";
+
+    // Create a target date at 23:59:59 in the specified timezone
+    // Use Intl.DateTimeFormat to get the UTC offset for the target timezone
+    let target: Date;
+    try {
+        // Format the target date at 23:59:59 in the given timezone
+        // and convert to an absolute UTC timestamp
+        const dateStr = `${targetDate}T23:59:59`;
+        const formatter = new Intl.DateTimeFormat("en-US", {
+            timeZone: tz,
+            year: "numeric",
+            month: "2-digit",
+            day: "2-digit",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+            hour12: false,
+        });
+
+        // Get the offset between UTC and the target timezone at the target date
+        // We do this by finding what UTC time corresponds to 23:59:59 in the target tz
+        // Approach: binary-search-free method using Date and timezone formatting
+        const utcDate = new Date(dateStr + "Z"); // interpret as UTC first
+        const utcStr = formatter.format(utcDate); // format that UTC time in target tz
+        // Parse the formatted string to see what time it shows in the target tz
+        const parts = formatter.formatToParts(utcDate);
+        const getPart = (type: string) => parts.find((p) => p.type === type)?.value || "0";
+        const tzHour = parseInt(getPart("hour"));
+        const tzMinute = parseInt(getPart("minute"));
+        const tzSecond = parseInt(getPart("second"));
+        const tzDay = parseInt(getPart("day"));
+        const tzMonth = parseInt(getPart("month"));
+        const tzYear = parseInt(getPart("year"));
+
+        // The UTC time showed as tzHour:tzMinute:tzSecond in the target tz
+        // We want 23:59:59 in target tz, so the offset is:
+        const targetInTz = new Date(Date.UTC(tzYear, tzMonth - 1, tzDay, tzHour, tzMinute, tzSecond));
+        const offsetMs = targetInTz.getTime() - utcDate.getTime();
+
+        // Now construct the actual target: 23:59:59 in target tz = that UTC time minus the offset
+        const wantedInTz = new Date(dateStr + "Z"); // This is the "wall clock" we want
+        target = new Date(wantedInTz.getTime() - offsetMs);
+    } catch {
+        // Fallback: if timezone handling fails, treat as local time
+        target = new Date(targetDate + "T23:59:59");
+    }
+
     const now = new Date();
-    const target = new Date(targetDate + "T23:59:59");
     const diff = target.getTime() - now.getTime();
     const isPast = diff < 0;
     const absDiff = Math.abs(diff);

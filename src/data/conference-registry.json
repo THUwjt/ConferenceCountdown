@@ -1,0 +1,1013 @@
+[
+    {
+        "short_name": "ICLR",
+        "name": "International Conference on Learning Representations",
+        "area": "AI/ML",
+        "ccfddl": {
+            "category": "AI",
+            "file": "iclr.yml"
+        },
+        "dblp_key": "iclr",
+        "static": {
+            "rating": "A*",
+            "rating_source": "CORE",
+            "review_type": "double-blind",
+            "paper_format": "LaTeX",
+            "max_pages": 10,
+            "submission_types": [
+                "long paper",
+                "short paper",
+                "poster"
+            ],
+            "h5_index": 332,
+            "h5_median": 565,
+            "acceptance_rate": 32.0,
+            "historical_acceptance_rates": {
+                "2025": 32.0,
+                "2024": 31.0,
+                "2023": 32.0,
+                "2022": 32.3
+            },
+            "proceedings_url": "https://openreview.net/group?id=ICLR.cc/2025/Conference",
+            "paper_template_url": "https://github.com/ICLR/Master-Template",
+            "themes": [
+                "Representation Learning",
+                "Deep Learning",
+                "Generative Models",
+                "Reinforcement Learning"
+            ],
+            "tracks": [
+                "Main Conference",
+                "Workshop",
+                "Tiny Papers"
+            ],
+            "publisher": "OpenReview",
+            "open_access": true,
+            "is_favorite": true,
+            "fallback": {
+                "year": 2026,
+                "conference_start_date": "2026-04-23",
+                "conference_end_date": "2026-04-27",
+                "submission_deadline": "2025-09-24",
+                "abstract_deadline": "2025-09-19",
+                "notification_date": "2026-01-25",
+                "camera_ready_date": "2026-03-14",
+                "city": "Rio de Janeiro",
+                "country": "Brazil",
+                "venue": "Riocentro Convention Center",
+                "timezone": "America/Sao_Paulo",
+                "website": "https://iclr.cc/Conferences/2026",
+                "cfp_url": "https://iclr.cc/Conferences/2026/CallForPapers"
+            }
+        }
+    },
+    {
+        "short_name": "NeurIPS",
+        "name": "Conference on Neural Information Processing Systems",
+        "area": "AI/ML",
+        "ccfddl": {
+            "category": "AI",
+            "file": "nips.yml"
+        },
+        "dblp_key": "nips",
+        "static": {
+            "rating": "A*",
+            "rating_source": "CORE",
+            "review_type": "double-blind",
+            "paper_format": "LaTeX",
+            "max_pages": 10,
+            "submission_types": [
+                "long paper",
+                "poster",
+                "spotlight",
+                "datasets & benchmarks"
+            ],
+            "h5_index": 309,
+            "h5_median": 530,
+            "acceptance_rate": 25.8,
+            "historical_acceptance_rates": {
+                "2025": 25.8,
+                "2024": 25.8,
+                "2023": 26.1,
+                "2022": 25.6
+            },
+            "proceedings_url": "https://proceedings.neurips.cc/paper_files/paper/2025",
+            "paper_template_url": "https://neurips.cc/Conferences/2026/PaperInformation/StyleFiles",
+            "themes": [
+                "Machine Learning",
+                "Neuroscience",
+                "Optimization",
+                "Theory"
+            ],
+            "tracks": [
+                "Main Conference",
+                "Datasets & Benchmarks",
+                "Workshop"
+            ],
+            "publisher": "NeurIPS Proceedings",
+            "open_access": true,
+            "is_favorite": true,
+            "fallback": {
+                "year": 2026,
+                "conference_start_date": "2026-12-06",
+                "conference_end_date": "2026-12-12",
+                "submission_deadline": "2026-05-06",
+                "abstract_deadline": "2026-05-04",
+                "notification_date": "2026-09-24",
+                "camera_ready_date": "2026-10-31",
+                "city": "Sydney",
+                "country": "Australia",
+                "venue": "International Convention Centre Sydney",
+                "timezone": "Australia/Sydney",
+                "website": "https://neurips.cc/Conferences/2026",
+                "cfp_url": "https://neurips.cc/Conferences/2026/CallForPapers"
+            }
+        }
+    },
+    {
+        "short_name": "ICML",
+        "name": "International Conference on Machine Learning",
+        "area": "AI/ML",
+        "ccfddl": {
+            "category": "AI",
+            "file": "icml.yml"
+        },
+        "dblp_key": "icml",
+        "static": {
+            "rating": "A*",
+            "rating_source": "CORE",
+            "review_type": "double-blind",
+            "paper_format": "LaTeX",
+            "max_pages": 10,
+            "submission_types": [
+                "long paper",
+                "poster",
+                "spotlight"
+            ],
+            "h5_index": 268,
+            "h5_median": 474,
+            "acceptance_rate": 27.9,
+            "historical_acceptance_rates": {
+                "2025": 27.9,
+                "2024": 27.5,
+                "2023": 27.9,
+                "2022": 21.9
+            },
+            "proceedings_url": "https://proceedings.mlr.press/v267",
+            "paper_template_url": "https://icml.cc/Conferences/2026/StyleFiles",
+            "themes": [
+                "Machine Learning",
+                "Deep Learning",
+                "Optimization",
+                "Theory"
+            ],
+            "tracks": [
+                "Main Conference",
+                "Workshop",
+                "Tutorial"
+            ],
+            "publisher": "PMLR",
+            "open_access": true,
+            "is_favorite": true,
+            "fallback": {
+                "year": 2026,
+                "conference_start_date": "2026-07-06",
+                "conference_end_date": "2026-07-12",
+                "submission_deadline": "2026-01-29",
+                "abstract_deadline": "2026-01-24",
+                "notification_date": "2026-04-30",
+                "camera_ready_date": "2026-06-05",
+                "city": "Seoul",
+                "country": "South Korea",
+                "venue": "COEX Convention Center",
+                "timezone": "Asia/Seoul",
+                "website": "https://icml.cc/Conferences/2026",
+                "cfp_url": "https://icml.cc/Conferences/2026/CallForPapers"
+            }
+        }
+    },
+    {
+        "short_name": "AAAI",
+        "name": "AAAI Conference on Artificial Intelligence",
+        "area": "AI/ML",
+        "ccfddl": {
+            "category": "AI",
+            "file": "aaai.yml"
+        },
+        "dblp_key": "aaai",
+        "static": {
+            "rating": "A*",
+            "rating_source": "CCF",
+            "review_type": "double-blind",
+            "paper_format": "LaTeX",
+            "max_pages": 8,
+            "submission_types": [
+                "long paper",
+                "short paper",
+                "demo",
+                "student abstract"
+            ],
+            "h5_index": 212,
+            "h5_median": 330,
+            "acceptance_rate": 23.4,
+            "historical_acceptance_rates": {
+                "2026": 23.4,
+                "2025": 23.4,
+                "2024": 23.7,
+                "2023": 19.6
+            },
+            "proceedings_url": "https://ojs.aaai.org/index.php/AAAI/issue/view/683",
+            "paper_template_url": "https://aaai.org/authorkit/",
+            "themes": [
+                "Artificial Intelligence",
+                "NLP",
+                "Computer Vision",
+                "Robotics",
+                "Knowledge Representation"
+            ],
+            "tracks": [
+                "Main Track",
+                "Special Track",
+                "Demo",
+                "Workshop",
+                "Tutorial"
+            ],
+            "publisher": "AAAI Press",
+            "open_access": true,
+            "is_favorite": false,
+            "fallback": {
+                "year": 2027,
+                "conference_start_date": "2027-02-16",
+                "conference_end_date": "2027-02-23",
+                "submission_deadline": "2026-08-01",
+                "abstract_deadline": "2026-07-25",
+                "notification_date": "2026-11-10",
+                "camera_ready_date": "2026-11-20",
+                "city": "Montréal",
+                "country": "Canada",
+                "venue": "Palais des congrès de Montréal",
+                "timezone": "America/Montreal",
+                "website": "https://aaai.org/conference/aaai/aaai-27/",
+                "cfp_url": null
+            }
+        }
+    },
+    {
+        "short_name": "MLSys",
+        "name": "Conference on Machine Learning and Systems",
+        "area": "Systems",
+        "ccfddl": null,
+        "dblp_key": "mlsys",
+        "static": {
+            "rating": "A",
+            "rating_source": "Community",
+            "review_type": "double-blind",
+            "paper_format": "LaTeX",
+            "max_pages": 12,
+            "submission_types": [
+                "long paper",
+                "poster"
+            ],
+            "h5_index": 67,
+            "h5_median": 113,
+            "acceptance_rate": 24.0,
+            "historical_acceptance_rates": {
+                "2025": 24.0,
+                "2024": 22.0,
+                "2023": 25.0,
+                "2022": 20.0
+            },
+            "proceedings_url": "https://proceedings.mlsys.org/papers/2025",
+            "paper_template_url": "https://mlsys.org/Conferences/2026/StyleFiles",
+            "themes": [
+                "ML Systems",
+                "Compiler Optimization",
+                "Distributed Training",
+                "Inference"
+            ],
+            "tracks": [
+                "Main Conference",
+                "Workshop"
+            ],
+            "publisher": "MLSys",
+            "open_access": true,
+            "is_favorite": true,
+            "fallback": {
+                "year": 2026,
+                "conference_start_date": "2026-05-18",
+                "conference_end_date": "2026-05-22",
+                "submission_deadline": "2025-10-30",
+                "abstract_deadline": null,
+                "notification_date": "2026-01-26",
+                "camera_ready_date": "2026-04-01",
+                "city": "Bellevue",
+                "country": "USA",
+                "venue": "Meydenbauer Center",
+                "timezone": "America/Los_Angeles",
+                "website": "https://mlsys.org/",
+                "cfp_url": "https://mlsys.org/Conferences/2026/CallForPapers"
+            }
+        }
+    },
+    {
+        "short_name": "OSDI",
+        "name": "USENIX Symposium on Operating Systems Design and Implementation",
+        "area": "Systems",
+        "ccfddl": {
+            "category": "SE",
+            "file": "osdi.yml"
+        },
+        "dblp_key": "osdi",
+        "static": {
+            "rating": "A*",
+            "rating_source": "CCF",
+            "review_type": "double-blind",
+            "paper_format": "LaTeX",
+            "max_pages": 12,
+            "submission_types": [
+                "long paper"
+            ],
+            "h5_index": 76,
+            "h5_median": 133,
+            "acceptance_rate": 18.5,
+            "historical_acceptance_rates": {
+                "2024": 18.5,
+                "2023": 19.0,
+                "2022": 17.9,
+                "2021": 18.8
+            },
+            "proceedings_url": "https://www.usenix.org/conference/osdi24/technical-sessions",
+            "paper_template_url": "https://www.usenix.org/conferences/author-resources/paper-templates",
+            "themes": [
+                "Operating Systems",
+                "Distributed Systems",
+                "Storage",
+                "Networking",
+                "ML Systems"
+            ],
+            "tracks": [
+                "Research Track",
+                "Operational Systems Track"
+            ],
+            "publisher": "USENIX",
+            "open_access": true,
+            "is_favorite": false
+        }
+    },
+    {
+        "short_name": "SOSP",
+        "name": "ACM Symposium on Operating Systems Principles",
+        "area": "Systems",
+        "ccfddl": {
+            "category": "SE",
+            "file": "sosp.yml"
+        },
+        "dblp_key": "sosp",
+        "static": {
+            "rating": "A*",
+            "rating_source": "CCF",
+            "review_type": "double-blind",
+            "paper_format": "LaTeX",
+            "max_pages": 12,
+            "submission_types": [
+                "long paper"
+            ],
+            "h5_index": 56,
+            "h5_median": 100,
+            "acceptance_rate": 17.5,
+            "historical_acceptance_rates": {
+                "2025": 17.5,
+                "2023": 17.4,
+                "2021": 18.0
+            },
+            "proceedings_url": "https://dl.acm.org/doi/proceedings/10.1145/3694715",
+            "paper_template_url": "https://www.acm.org/publications/proceedings-template",
+            "themes": [
+                "Operating Systems",
+                "Distributed Systems",
+                "Verification",
+                "Security"
+            ],
+            "tracks": [
+                "Main Conference",
+                "Workshop"
+            ],
+            "publisher": "ACM",
+            "open_access": false,
+            "is_favorite": false
+        }
+    },
+    {
+        "short_name": "PACT",
+        "name": "International Conference on Parallel Architectures and Compilation Techniques",
+        "area": "Systems",
+        "ccfddl": {
+            "category": "DS",
+            "file": "pact.yml"
+        },
+        "dblp_key": "pact",
+        "static": {
+            "rating": "A",
+            "rating_source": "CCF",
+            "review_type": "double-blind",
+            "paper_format": "LaTeX",
+            "max_pages": 12,
+            "submission_types": [
+                "long paper",
+                "short paper",
+                "poster"
+            ],
+            "h5_index": 35,
+            "h5_median": 52,
+            "acceptance_rate": 25.0,
+            "historical_acceptance_rates": {
+                "2025": 25.0,
+                "2024": 24.5,
+                "2023": 23.8,
+                "2022": 25.2
+            },
+            "proceedings_url": "https://dblp.org/db/conf/IEEEpact/index.html",
+            "paper_template_url": "https://www.acm.org/publications/proceedings-template",
+            "themes": [
+                "Parallel Computing",
+                "Compiler Optimization",
+                "Architecture",
+                "Runtime Systems"
+            ],
+            "tracks": [
+                "Main Conference",
+                "Workshop",
+                "Tutorial"
+            ],
+            "publisher": "ACM/IEEE",
+            "open_access": false,
+            "is_favorite": false
+        }
+    },
+    {
+        "short_name": "HPCA",
+        "name": "IEEE International Symposium on High-Performance Computer Architecture",
+        "area": "Hardware",
+        "ccfddl": {
+            "category": "DS",
+            "file": "hpca.yml"
+        },
+        "dblp_key": "hpca",
+        "static": {
+            "rating": "A",
+            "rating_source": "CCF",
+            "review_type": "double-blind",
+            "paper_format": "LaTeX",
+            "max_pages": 12,
+            "submission_types": [
+                "long paper"
+            ],
+            "h5_index": 60,
+            "h5_median": 93,
+            "acceptance_rate": 22.8,
+            "historical_acceptance_rates": {
+                "2026": 22.8,
+                "2025": 22.8,
+                "2024": 24.2,
+                "2023": 25.0
+            },
+            "proceedings_url": "https://dblp.org/db/conf/hpca/index.html",
+            "paper_template_url": "https://www.ieee.org/conferences/publishing/templates.html",
+            "themes": [
+                "Computer Architecture",
+                "Microarchitecture",
+                "Memory Systems",
+                "Accelerators"
+            ],
+            "tracks": [
+                "Main Conference",
+                "Workshop",
+                "Tutorial"
+            ],
+            "publisher": "IEEE",
+            "open_access": false,
+            "is_favorite": true
+        }
+    },
+    {
+        "short_name": "ISCA",
+        "name": "International Symposium on Computer Architecture",
+        "area": "Hardware",
+        "ccfddl": {
+            "category": "DS",
+            "file": "isca.yml"
+        },
+        "dblp_key": "isca",
+        "static": {
+            "rating": "A*",
+            "rating_source": "CCF",
+            "review_type": "double-blind",
+            "paper_format": "LaTeX",
+            "max_pages": 12,
+            "submission_types": [
+                "long paper"
+            ],
+            "h5_index": 72,
+            "h5_median": 120,
+            "acceptance_rate": 22.0,
+            "historical_acceptance_rates": {
+                "2025": 22.0,
+                "2024": 21.5,
+                "2023": 22.2,
+                "2022": 20.0
+            },
+            "proceedings_url": "https://dblp.org/db/conf/isca/index.html",
+            "paper_template_url": "https://www.ieee.org/conferences/publishing/templates.html",
+            "themes": [
+                "Computer Architecture",
+                "Accelerators",
+                "Memory",
+                "Interconnect"
+            ],
+            "tracks": [
+                "Main Conference",
+                "Workshop",
+                "Tutorial"
+            ],
+            "publisher": "ACM/IEEE",
+            "open_access": false,
+            "is_favorite": true
+        }
+    },
+    {
+        "short_name": "MICRO",
+        "name": "IEEE/ACM International Symposium on Microarchitecture",
+        "area": "Hardware",
+        "ccfddl": {
+            "category": "DS",
+            "file": "micro.yml"
+        },
+        "dblp_key": "micro",
+        "static": {
+            "rating": "A*",
+            "rating_source": "CCF",
+            "review_type": "double-blind",
+            "paper_format": "LaTeX",
+            "max_pages": 12,
+            "submission_types": [
+                "long paper"
+            ],
+            "h5_index": 65,
+            "h5_median": 106,
+            "acceptance_rate": 22.5,
+            "historical_acceptance_rates": {
+                "2025": 22.5,
+                "2024": 22.0,
+                "2023": 22.4,
+                "2022": 20.9
+            },
+            "proceedings_url": "https://dblp.org/db/conf/micro/index.html",
+            "paper_template_url": "https://www.ieee.org/conferences/publishing/templates.html",
+            "themes": [
+                "Microarchitecture",
+                "Processors",
+                "Accelerators",
+                "Security"
+            ],
+            "tracks": [
+                "Main Conference",
+                "Workshop",
+                "Tutorial"
+            ],
+            "publisher": "ACM/IEEE",
+            "open_access": false,
+            "is_favorite": true
+        }
+    },
+    {
+        "short_name": "ICCAD",
+        "name": "International Conference on Computer-Aided Design",
+        "area": "EDA/VLSI",
+        "ccfddl": {
+            "category": "DS",
+            "file": "iccad.yml"
+        },
+        "dblp_key": "iccad",
+        "static": {
+            "rating": "A",
+            "rating_source": "CCF",
+            "review_type": "double-blind",
+            "paper_format": "LaTeX",
+            "max_pages": 8,
+            "submission_types": [
+                "long paper",
+                "short paper",
+                "poster"
+            ],
+            "h5_index": 45,
+            "h5_median": 65,
+            "acceptance_rate": 24.0,
+            "historical_acceptance_rates": {
+                "2025": 24.0,
+                "2024": 23.5,
+                "2023": 24.3,
+                "2022": 22.1
+            },
+            "proceedings_url": "https://dblp.org/db/conf/iccad/index.html",
+            "paper_template_url": "https://www.ieee.org/conferences/publishing/templates.html",
+            "themes": [
+                "EDA",
+                "Logic Synthesis",
+                "Physical Design",
+                "Verification",
+                "ML for EDA"
+            ],
+            "tracks": [
+                "Main Conference",
+                "Workshop",
+                "Contest"
+            ],
+            "publisher": "ACM/IEEE",
+            "open_access": false,
+            "is_favorite": false
+        }
+    },
+    {
+        "short_name": "DATE",
+        "name": "Design, Automation and Test in Europe",
+        "area": "EDA/VLSI",
+        "ccfddl": {
+            "category": "DS",
+            "file": "date.yml"
+        },
+        "dblp_key": "date",
+        "static": {
+            "rating": "A",
+            "rating_source": "CCF",
+            "review_type": "double-blind",
+            "paper_format": "LaTeX",
+            "max_pages": 6,
+            "submission_types": [
+                "long paper",
+                "extended abstract",
+                "late breaking results"
+            ],
+            "h5_index": 52,
+            "h5_median": 71,
+            "acceptance_rate": 25.0,
+            "historical_acceptance_rates": {
+                "2025": 25.0,
+                "2024": 24.2,
+                "2023": 25.5,
+                "2022": 26.0
+            },
+            "proceedings_url": "https://dblp.org/db/conf/date/index.html",
+            "paper_template_url": "https://www.ieee.org/conferences/publishing/templates.html",
+            "themes": [
+                "EDA",
+                "Embedded Systems",
+                "Cyber-Physical Systems",
+                "IoT"
+            ],
+            "tracks": [
+                "Design Methods",
+                "Applications",
+                "Test",
+                "Embedded Systems"
+            ],
+            "publisher": "IEEE/ACM",
+            "open_access": false,
+            "is_favorite": false
+        }
+    },
+    {
+        "short_name": "ASP-DAC",
+        "name": "Asia and South Pacific Design Automation Conference",
+        "area": "EDA/VLSI",
+        "ccfddl": {
+            "category": "DS",
+            "file": "aspdac.yml"
+        },
+        "dblp_key": "aspdac",
+        "static": {
+            "rating": "B",
+            "rating_source": "CCF",
+            "review_type": "double-blind",
+            "paper_format": "LaTeX",
+            "max_pages": 6,
+            "submission_types": [
+                "long paper",
+                "short paper",
+                "poster"
+            ],
+            "h5_index": 30,
+            "h5_median": 42,
+            "acceptance_rate": 30.0,
+            "historical_acceptance_rates": {
+                "2026": 30.0,
+                "2025": 30.0,
+                "2024": 29.5,
+                "2023": 31.0
+            },
+            "proceedings_url": "https://dblp.org/db/conf/aspdac/index.html",
+            "paper_template_url": "https://www.ieee.org/conferences/publishing/templates.html",
+            "themes": [
+                "VLSI Design",
+                "EDA",
+                "Embedded Systems",
+                "Low Power",
+                "AI for EDA"
+            ],
+            "tracks": [
+                "Main Conference",
+                "Workshop",
+                "Tutorial",
+                "Design Contest"
+            ],
+            "publisher": "ACM/IEEE",
+            "open_access": false,
+            "is_favorite": false
+        }
+    },
+    {
+        "short_name": "DAC",
+        "name": "Design Automation Conference",
+        "area": "EDA/VLSI",
+        "ccfddl": {
+            "category": "DS",
+            "file": "dac.yml"
+        },
+        "dblp_key": "dac",
+        "static": {
+            "rating": "A",
+            "rating_source": "CCF",
+            "review_type": "double-blind",
+            "paper_format": "LaTeX",
+            "max_pages": 6,
+            "submission_types": [
+                "long paper",
+                "late breaking results",
+                "poster"
+            ],
+            "h5_index": 53,
+            "h5_median": 78,
+            "acceptance_rate": 23.0,
+            "historical_acceptance_rates": {
+                "2025": 23.0,
+                "2024": 22.5,
+                "2023": 23.0,
+                "2022": 23.7
+            },
+            "proceedings_url": "https://dl.acm.org/doi/proceedings/10.1145/3649329",
+            "paper_template_url": "https://www.ieee.org/conferences/publishing/templates.html",
+            "themes": [
+                "Design Automation",
+                "EDA",
+                "AI",
+                "Security",
+                "Low Power",
+                "Chiplets"
+            ],
+            "tracks": [
+                "Research",
+                "Late Breaking Results",
+                "Engineering Track",
+                "Exhibition"
+            ],
+            "publisher": "ACM/IEEE",
+            "open_access": false,
+            "is_favorite": true
+        }
+    },
+    {
+        "short_name": "ISSCC",
+        "name": "IEEE International Solid-State Circuits Conference",
+        "area": "Hardware",
+        "ccfddl": null,
+        "dblp_key": "isscc",
+        "static": {
+            "rating": "A*",
+            "rating_source": "Community",
+            "review_type": "single-blind",
+            "paper_format": "IEEE",
+            "max_pages": 4,
+            "submission_types": [
+                "regular paper",
+                "demo"
+            ],
+            "h5_index": 78,
+            "h5_median": 120,
+            "acceptance_rate": 30.0,
+            "historical_acceptance_rates": {
+                "2026": 30.0,
+                "2025": 30.0,
+                "2024": 29.0,
+                "2023": 30.5
+            },
+            "proceedings_url": "https://dblp.org/db/conf/isscc/index.html",
+            "paper_template_url": "https://www.ieee.org/conferences/publishing/templates.html",
+            "themes": [
+                "Analog",
+                "Digital",
+                "RF",
+                "Power Management",
+                "Data Converters",
+                "Memory"
+            ],
+            "tracks": [
+                "Regular Sessions",
+                "Demo",
+                "Forum",
+                "Tutorial"
+            ],
+            "publisher": "IEEE",
+            "open_access": false,
+            "is_favorite": false,
+            "fallback": {
+                "year": 2027,
+                "conference_start_date": "2027-02-14",
+                "conference_end_date": "2027-02-18",
+                "submission_deadline": "2026-09-08",
+                "abstract_deadline": null,
+                "notification_date": "2026-11-15",
+                "camera_ready_date": "2026-12-15",
+                "city": "San Francisco",
+                "country": "USA",
+                "venue": "San Francisco Marriott Marquis",
+                "timezone": "America/Los_Angeles",
+                "website": "https://www.isscc.org/",
+                "cfp_url": "https://www.isscc.org/call-for-papers"
+            }
+        }
+    },
+    {
+        "short_name": "VLSI",
+        "name": "IEEE Symposium on VLSI Technology and Circuits",
+        "area": "Hardware",
+        "ccfddl": null,
+        "dblp_key": "vlsit",
+        "static": {
+            "rating": "A",
+            "rating_source": "Community",
+            "review_type": "single-blind",
+            "paper_format": "IEEE",
+            "max_pages": 4,
+            "submission_types": [
+                "regular paper",
+                "late news"
+            ],
+            "h5_index": 55,
+            "h5_median": 85,
+            "acceptance_rate": 28.0,
+            "historical_acceptance_rates": {
+                "2025": 28.0,
+                "2024": 27.0,
+                "2023": 29.0,
+                "2022": 30.0
+            },
+            "proceedings_url": "https://dblp.org/db/conf/vlsit/index.html",
+            "paper_template_url": "https://www.ieee.org/conferences/publishing/templates.html",
+            "themes": [
+                "VLSI Technology",
+                "Circuit Design",
+                "Devices",
+                "Process",
+                "AI"
+            ],
+            "tracks": [
+                "Technology",
+                "Circuits"
+            ],
+            "publisher": "IEEE",
+            "open_access": false,
+            "is_favorite": false,
+            "fallback": {
+                "year": 2026,
+                "conference_start_date": "2026-06-14",
+                "conference_end_date": "2026-06-18",
+                "submission_deadline": "2026-01-26",
+                "abstract_deadline": null,
+                "notification_date": "2026-03-20",
+                "camera_ready_date": "2026-04-30",
+                "city": "Honolulu",
+                "country": "USA",
+                "venue": "Hilton Hawaiian Village",
+                "timezone": "Pacific/Honolulu",
+                "website": "https://www.vlsisymposium.org/",
+                "cfp_url": "https://www.vlsisymposium.org/call-for-papers/"
+            }
+        }
+    },
+    {
+        "short_name": "IEDM",
+        "name": "IEEE International Electron Devices Meeting",
+        "area": "Hardware",
+        "ccfddl": null,
+        "dblp_key": "iedm",
+        "static": {
+            "rating": "A*",
+            "rating_source": "Community",
+            "review_type": "single-blind",
+            "paper_format": "IEEE",
+            "max_pages": 4,
+            "submission_types": [
+                "regular paper",
+                "late news"
+            ],
+            "h5_index": 62,
+            "h5_median": 95,
+            "acceptance_rate": 32.0,
+            "historical_acceptance_rates": {
+                "2025": 32.0,
+                "2024": 31.0,
+                "2023": 33.0,
+                "2022": 30.0
+            },
+            "proceedings_url": "https://dblp.org/db/conf/iedm/index.html",
+            "paper_template_url": "https://www.ieee.org/conferences/publishing/templates.html",
+            "themes": [
+                "Electron Devices",
+                "Transistors",
+                "Memory",
+                "Emerging Devices"
+            ],
+            "tracks": [
+                "Regular Sessions",
+                "Focus Sessions",
+                "Tutorial"
+            ],
+            "publisher": "IEEE",
+            "open_access": false,
+            "is_favorite": false,
+            "fallback": {
+                "year": 2026,
+                "conference_start_date": "2026-12-05",
+                "conference_end_date": "2026-12-09",
+                "submission_deadline": "2026-07-01",
+                "abstract_deadline": null,
+                "notification_date": "2026-09-15",
+                "camera_ready_date": "2026-10-20",
+                "city": "San Francisco",
+                "country": "USA",
+                "venue": "Hilton San Francisco Union Square",
+                "timezone": "America/Los_Angeles",
+                "website": "https://www.ieee-iedm.org/",
+                "cfp_url": "https://www.ieee-iedm.org/call-for-papers"
+            }
+        }
+    },
+    {
+        "short_name": "HOT CHIPS",
+        "name": "Hot Chips: A Symposium on High Performance Chips",
+        "area": "Hardware",
+        "ccfddl": null,
+        "dblp_key": "hotchips",
+        "static": {
+            "rating": "A",
+            "rating_source": "Community",
+            "review_type": "single-blind",
+            "paper_format": "Slides/Extended Abstract",
+            "max_pages": 30,
+            "submission_types": [
+                "presentation",
+                "poster",
+                "tutorial"
+            ],
+            "h5_index": 40,
+            "h5_median": 58,
+            "acceptance_rate": 35.0,
+            "historical_acceptance_rates": {
+                "2025": 35.0,
+                "2024": 33.0,
+                "2023": 36.0
+            },
+            "proceedings_url": "https://hotchips.org/archives/",
+            "paper_template_url": null,
+            "themes": [
+                "Processors",
+                "AI Accelerators",
+                "Networking",
+                "Memory",
+                "Chiplets"
+            ],
+            "tracks": [
+                "Presentations",
+                "Posters",
+                "Tutorials"
+            ],
+            "publisher": "IEEE",
+            "open_access": false,
+            "is_favorite": true,
+            "fallback": {
+                "year": 2026,
+                "conference_start_date": "2026-08-23",
+                "conference_end_date": "2026-08-25",
+                "submission_deadline": "2026-04-08",
+                "abstract_deadline": null,
+                "notification_date": "2026-05-15",
+                "camera_ready_date": "2026-07-17",
+                "city": "Stanford",
+                "country": "USA",
+                "venue": "Stanford University, Memorial Auditorium",
+                "timezone": "America/Los_Angeles",
+                "website": "https://www.hotchips.org/",
+                "cfp_url": "https://www.hotchips.org/call-for-contributions/"
+            }
+        }
+    }
+]

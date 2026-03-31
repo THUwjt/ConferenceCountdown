@@ -55,7 +55,7 @@ export function UpcomingDeadlines({ conferences }: UpcomingDeadlinesProps) {
 }
 
 function DeadlineItem({ conference }: { conference: Conference }) {
-    const countdown = useCountdown(conference.submission_deadline);
+    const countdown = useCountdown(conference.submission_deadline, "Etc/GMT+12");
     const urgencyColor = getDeadlineUrgencyColor(conference.submission_deadline);
 
     return (
@@ -68,6 +68,7 @@ function DeadlineItem({ conference }: { conference: Conference }) {
                 </div>
                 <div className={cn("text-xs", urgencyColor)}>
                     {formatDate(conference.submission_deadline)}
+                    <span className="text-gray-400 ml-1">(AoE)</span>
                 </div>
             </div>
             <div className="text-right flex-shrink-0">
